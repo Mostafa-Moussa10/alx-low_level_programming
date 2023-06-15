@@ -2,9 +2,9 @@
 
 echo "enter file name"
 
-read file_name
+read filename
 
-chmod u+x $filename
+chmod +x $filename
 
 git add .
 
