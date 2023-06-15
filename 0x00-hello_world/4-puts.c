@@ -10,6 +10,6 @@
 
 int main(void)
 {
-puts("progrmming is like building a multiingual puzzle");
+puts("\"progrmming is like building a multiingual puzzle");
 return (0);
 }
