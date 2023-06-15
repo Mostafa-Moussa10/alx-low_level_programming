@@ -1,13 +1,9 @@
 #include <stdio.h>
-
 /*
- * main - print a phrase
+ * main - A function to Print a phrase
  *
- * Description: use the function of puts
- *
- * Return: 0 Always
+ * Return: 0 (Success)
  */
-
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
