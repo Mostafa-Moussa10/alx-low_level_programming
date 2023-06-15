@@ -3,13 +3,13 @@
 /*
  * main - print a phrase
  *
- * Description - use the function of puts
+ * Description: use the function of puts
  *
  * Return: 0 Always
  */
 
 int main(void)
 {
-puts("\"progrmming is like building a multiingual puzzle");
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
