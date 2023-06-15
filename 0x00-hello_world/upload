@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "enter file name"
+
+read file_name
+
+chmod u+x $filename
+
+git add .
+
+echo "enter commit"
+
+read des
+
+git commit -m "$des"
+
+git push
