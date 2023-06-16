@@ -11,7 +11,7 @@ int main(void)
 	}
 
 	/*new line*/
-	putchar('\n'); 
+	putchar('\n');
 
 	return (0);
 }
