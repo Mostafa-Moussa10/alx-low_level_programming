@@ -9,5 +9,9 @@ int main(void)
 	{
 		putchar(ch);
 	}
+
+	/*new line*/
+	putchat('\n'); 
+
 	return (0);
 }
