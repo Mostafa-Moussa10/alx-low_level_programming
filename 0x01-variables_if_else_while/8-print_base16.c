@@ -13,7 +13,7 @@ int main(void)
 
 	x = 'a';
 
-	while (x <= 'e')
+	while (x <= 'f')
 	{
 		putchar(x);
 		x++;
@@ -21,5 +21,5 @@ int main(void)
 
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
