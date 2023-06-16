@@ -8,8 +8,11 @@ int main(void)
 	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
 		/*don't print q or e */
+
 		if ((ch == 'q') || (ch == 'e'))
-				continue;
+		{
+			continue;
+		}
 
 		putchar(ch);
 	}
