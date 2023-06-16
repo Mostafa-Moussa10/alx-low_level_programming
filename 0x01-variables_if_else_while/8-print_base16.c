@@ -8,7 +8,7 @@ int main(void)
 	while  (x < 10)
 	{
 		putchar('0' + x);
-		x++
+		x++;
 	}
 
 	x = 'a';
@@ -16,7 +16,7 @@ int main(void)
 	while (x <= 'e')
 	{
 		putchar(x);
-		x++
+		x++;
 	}
 
 	putchar('\n');
