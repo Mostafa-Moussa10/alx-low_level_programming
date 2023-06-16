@@ -13,10 +13,6 @@ int main(void)
 		{
 			putchar(',');
 		}
-		else 
-		{
-			putchar('$');
-		}
 
 		putchar(' ');
 		x++;
