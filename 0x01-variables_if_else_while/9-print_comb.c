@@ -9,12 +9,17 @@ int main(void)
 	while (x < 10)
 	{
 		putchar('0' + x);
-		if (x != 9)
+		if (x < 10)
 		{
 			putchar(',');
+			putchat(' ');
+			
 		}
+		else
+		{
 
-		putchar(' ');
+			putchar(' ');
+		}
 		x++;
 
 	}
