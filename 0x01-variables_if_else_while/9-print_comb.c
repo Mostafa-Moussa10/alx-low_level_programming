@@ -12,7 +12,7 @@ int main(void)
 		if (x < 10)
 		{
 			putchar(',');
-			putchat(' ');
+			putchar(' ');
 			
 		}
 		else
