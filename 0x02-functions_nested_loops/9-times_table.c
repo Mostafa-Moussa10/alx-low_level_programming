@@ -24,7 +24,6 @@ void times_table(void)
 			_putchar(' ');
 			_putchar(' ');
 
-			_putchar ('0' + k);
 
 			if (k < 10)
 			{
@@ -49,6 +48,7 @@ void times_table(void)
 		}
 
 		_putchar('\n');
+
 		i++;
 	}
 }
