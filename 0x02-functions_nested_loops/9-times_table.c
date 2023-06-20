@@ -13,21 +13,22 @@ void times_table(void)
 
 	while (i < 10)
 	{
-		j = 0;
+		j = 1;
+		_putchar('0');
+		_putchar(',');
+
 		while (j < 10)
 		{
 			k = i * j;
+
+			_putchar(' ');
+			_putchar(' ');
+
+			_putchar ('0' + k);
+
 			if (k < 10)
 			{
 				_putchar('0' + k);
-		 
-				if (j != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
-				
 			
 			}
 			
@@ -35,24 +36,19 @@ void times_table(void)
 			{
 				_putchar('0' + k / 10);
 				_putchar('0' + k % 10);
-				if (j != 9)
-                    		{
-
-					_putchar(',');
-					_putchar(' ');
-				}
 			}
-			
-	
-		
+			  
+			if (k != 9)      
+			{
+                                   
+			   	_putchar(',');
+                        
+			}
 			j++;
-	
+
 		}
 
-			
-		_putchar('\n');
 		i++;
-	
-	
 	}
 }
+
