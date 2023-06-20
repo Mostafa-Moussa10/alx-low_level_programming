@@ -1,5 +1,7 @@
+#ifndef MOSTAFA
+#define MOSTAFA
 /**
- * prototype of functions
+ * decleration of functions
  */
 
 int _putchar(char);
