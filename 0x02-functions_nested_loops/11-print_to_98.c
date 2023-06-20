@@ -55,4 +55,5 @@ void print_digit(int n)
 		_putchar('0' + n / 100);
 		_putchar('0' + n % 100);
 		_putchar('0' + n % 10);
+	}
 }
