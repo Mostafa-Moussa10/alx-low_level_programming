@@ -35,6 +35,7 @@ void print_to_98(int n)
 
 	}
 	print_digit(98);
+	_putchar(' ');
 
 	
 }
@@ -44,9 +45,14 @@ void print_digit(int n)
 	{
 		_putchar('0' + n);
 	}
-	else
+	else if ((n >= 10) && (n < 100))
 	{
 		_putchar('0' + n / 10);
 		_putchar('0' + n % 10);
 	}
+	else
+	{
+		_putchar('0' + n / 100);
+		_putchar('0' + n % 100);
+		_putchar('0' + n % 10);
 }
