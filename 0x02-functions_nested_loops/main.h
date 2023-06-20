@@ -1,5 +1,5 @@
-#ifndef MOSTAFA
-#define MOSTAFA
+#ifndef "MOSTAFA"
+#define "MOSTAFA"
 /**
  * decleration of functions
  */
