@@ -2,7 +2,7 @@
 
 
 /**
- * _islower - fuction to check if the input is letter or not
+ * _isalpha- fuction to check if the input is letter or not
  *
  * @c: variable to carry the letter to check
  *
