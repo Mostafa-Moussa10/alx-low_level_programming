@@ -39,10 +39,13 @@ void print_digit(int n)
 {
 	if (n < 10)
 	{
+		_putchar(' ');
+		_putchar(' ');
 		_putchar('0' + n);
 	}
 	else if ((n >= 10) && (n < 100))
 	{
+		_putchar(' ');
 		_putchar('0' + n / 10);
 		_putchar('0' + n % 10);
 	}
