@@ -9,8 +9,8 @@
 int main(void)
 {
 	int i = 0;
-	int fib = 2;
-	int pre = 1;
+	unsigned int fib = 2;
+	unsigned int pre = 1;
 
 	printf("1, ");
 	
