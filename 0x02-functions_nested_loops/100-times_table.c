@@ -12,32 +12,35 @@ void print_times_table(int n)
 	int j = 0;
 	int k = 0;
 
-
-	while (i <= n)
+	if (n <= 15)
 	{
-		j = 1;
-		_putchar('0');
-		if (n == 0)
+		while (i <= n)
 		{
-			_putchar(' ');
-			break;
-		}
-		else{
-			_putchar(',');
-			while (j <= n)
+			j = 1;
+			_putchar('0');
+			if (n == 0)
 			{
-				k = i * j;
-				_putchar(' ');
-				print_digit(k);
-				if (j != n)
-				{
-					_putchar(',');
-				}
-				j++;
+				_putchar('\n');
+				break;
 			}
+			else
+			{
+				_putchar(',');
+				while (j <= n)
+				{
+					k = i * j;
+					_putchar(' ');
+					print_digit(k);
+					if (j != n)
+					{
+						_putchar(',');
+					}
+					j++;
+				}
+			}
+			_putchar('\n');
+			i++;
 		}
-		_putchar('\n');
-		i++;
 	}
 }
 
