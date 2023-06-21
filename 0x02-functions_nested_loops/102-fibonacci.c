@@ -9,14 +9,21 @@
 int main(void)
 {
 	int i = 0;
-	int fib = 0;
+	int fib = 1;
 	int pre = 1;
 
+	printf("1, ");
+	
 	while (i < 50)
 	{
-		printf("%d, ", fib);
-		fib = pre + fib;
 		pre = fib;
+
+		fib = fib + pre;
+
+		printf("%d, ", fib);
+	
+		
+		
 		i++;
 	}
 	return (0);
