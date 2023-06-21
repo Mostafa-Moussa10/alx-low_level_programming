@@ -8,8 +8,6 @@
  *
  * Description: function to get the type of number
  *
- * @n: random number to check
- *
  * Return: 0
  */
 
