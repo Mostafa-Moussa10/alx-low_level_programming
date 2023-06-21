@@ -44,6 +44,11 @@ void print_times_table(int n)
 	}
 }
 
+/**
+ * print_digit - function to print a number maximum 3 digit 
+ *
+ * @n: the input number
+ */
 void print_digit(int n)
 {
 	if (n < 10)
