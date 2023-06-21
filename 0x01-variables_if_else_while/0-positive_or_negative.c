@@ -3,12 +3,10 @@
 #include <time.h>
 
 
-/*
- * main - fuction to check the number is positive or negative
+/**
+ * main - function to check whether the number is positive or negative
  *
- * Description: fuction to get the type of number
- *
- * @n: random number
+ * Description: function to get the type of number
  *
  * Return: 0
  */
