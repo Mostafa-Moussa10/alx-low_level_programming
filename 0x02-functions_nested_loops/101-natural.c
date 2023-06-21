@@ -3,9 +3,11 @@
 
 /**
  * main - function to print the sum
+ *
+ * Return: 1 if success
  */
 
-void main(void)
+int main(void)
 {
 	int i = 0;
 	int sum = 0;
@@ -18,7 +20,10 @@ void main(void)
 		}
 	}
 	printf("%d\n", sum);
+
+	return (1);
 }
+
 
 
 
