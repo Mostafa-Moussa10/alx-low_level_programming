@@ -45,9 +45,9 @@ void print_times_table(int n)
 }
 
 /**
- * print_digit - function to print a number maximum 3 digit 
+ * print_digit - function to print a number consist of max 3 digit
  *
- * @n: the input number
+ * @n: input
  */
 
 void print_digit(int n)
