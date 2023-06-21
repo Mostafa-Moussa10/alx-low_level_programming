@@ -19,4 +19,5 @@ int main(void)
 		pre = fib;
 		i++;
 	}
+	return (0);
 }
