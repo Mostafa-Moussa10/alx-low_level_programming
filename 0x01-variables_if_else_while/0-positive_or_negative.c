@@ -3,7 +3,7 @@
 #include <time.h>
 
 
-/*
+/**
  * main - fuction to check the number is positive or negative
  *
  * Description: fuction to get the type of number
