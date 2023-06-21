@@ -17,18 +17,24 @@ void print_times_table(int n)
 	{
 		j = 1;
 		_putchar('0');
-		_putchar(',');
-		while (j <= n)
+		if (n == 0)
 		{
-			k = i * j;
 			_putchar(' ');
-			print_digit(k);
-			
-			if (j != n)
+			break;
+		}
+		else{
+			_putchar(',');
+			while (j <= n)
 			{
-				_putchar(',');
+				k = i * j;
+				_putchar(' ');
+				print_digit(k);
+				if (j != n)
+				{
+					_putchar(',');
+				}
+				j++;
 			}
-			j++;
 		}
 		_putchar('\n');
 		i++;
