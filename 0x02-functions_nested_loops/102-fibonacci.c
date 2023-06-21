@@ -9,18 +9,19 @@
 int main(void)
 {
 	int i = 0;
-	int fib = 1;
+	int fib = 2;
 	int pre = 1;
 
 	printf("1, ");
 	
 	while (i < 50)
 	{
-		pre = fib;
+
+		printf("%d, ", fib);
+		pre = fib - pre;
 
 		fib = fib + pre;
 
-		printf("%d, ", fib);
 	
 		
 		
