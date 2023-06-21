@@ -23,7 +23,7 @@ void print_times_table(int n)
 			k = i * j;
 			_putchar(' ');
 			print_digit(k);
-			}
+			
 			if (j != 9)
 			{
 				_putchar(',');
@@ -35,7 +35,7 @@ void print_times_table(int n)
 	}
 }
 
-int print_digit(int n)
+void print_digit(int n)
 {
 	if (n < 10)
 	{
