@@ -2,7 +2,6 @@
 
 /**
  * print_line - print a line 
- *
  * @n: length of the line
  */
 
