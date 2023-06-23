@@ -15,9 +15,9 @@ void more_numbers(void)
 	{
 		for (i = 0; i < 15; i++)
 		{
-			printf("%d", i);
+			_putchar('0' + i);
 		}
-	printf("\n");
+	_putchar('\n');
 	y++;
 	}
 }
