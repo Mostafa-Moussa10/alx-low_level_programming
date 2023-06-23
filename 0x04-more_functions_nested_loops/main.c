@@ -2,39 +2,34 @@
 
 int main(void)
 {
-	 print_diagonal(0);
-	 print_diagonal(2);
-	 print_diagonal(10);
-	 print_diagonal(-4);
+
+	more_numbers();
+
 	return (0);
 }
 
 /**
- * print_diagonal - print a diagonal line
- * @n: length of the line
+ * more_numbers - function to print the numbers for 0 to 14 for 10 times
  */
 
-void print_diagonal(int n)
+
+void more_numbers(void)
 {
         int i = 0;
-        int j = 0;
+        int y = 0;
 
-        if (n <= 0)
+        while (y < 11)
         {
-                _putchar('\n');
-        }
-        else
-        {
-                for (i = 0; i < n; i++)
+                for (i = 0; i < 15; i++)
                 {
-                        while (j < i)
+                        if (i > 9)
                         {
-                                _putchar(' ');
-                                j++;
+                                _putchar('0' + i / 10);
                         }
-                        _putchar(92);
-                        _putchar('\n');
+                        _putchar('0' + i % 10);
                 }
+        _putchar('\n');
+        y++;
         }
 }
 #include <unistd.h>
@@ -49,4 +44,4 @@ void print_diagonal(int n)
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
-}    
+}
