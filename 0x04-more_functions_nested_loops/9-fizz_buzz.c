@@ -38,7 +38,7 @@ void fizz_buzz(void)
 		}
 		else
 		{
-			printf("%d");
+			printf("%d", n);
 		}
 		printf(" ");
 		n++;
