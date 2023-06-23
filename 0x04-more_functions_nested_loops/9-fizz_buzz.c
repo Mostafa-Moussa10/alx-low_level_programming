@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - functon to print fizz buzz 
+ * main - functon to print fizz buzz
  *
  * Return: 1 if success
  */
@@ -11,7 +11,7 @@ int main(void)
 {
 	fizz_buzz();
 
-	return(1);
+	return (1);
 }
 
 /**
@@ -32,7 +32,7 @@ void fizz_buzz(void)
 		{
 			printf("Buzz");
 		}
-		else if(n % 3 == 0 && n % 5 == 0)
+		else if (n % 3 == 0 && n % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
