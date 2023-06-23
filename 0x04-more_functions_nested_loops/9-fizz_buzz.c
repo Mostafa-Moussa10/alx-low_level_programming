@@ -24,7 +24,7 @@ void fizz_buzz(void)
 
 	printf("0 ");
 
-	while (n <= 100)
+	while (n < 100)
 	{
 		if (n % 3 == 0 && n % 5 != 0)
 		{
@@ -45,5 +45,5 @@ void fizz_buzz(void)
 		printf(" ");
 		n++;
 	}
-	printf("\n");
+	printf("FizzBuzz\n");
 }
