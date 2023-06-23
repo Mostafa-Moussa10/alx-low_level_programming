@@ -17,5 +17,6 @@ void print_square(int size);
 void print_triangle(int size);
 int _putchar(char c);
 void fizz_buzz(void);
+int next_prime_factor(int current_prime_factor);
 
 #endif
