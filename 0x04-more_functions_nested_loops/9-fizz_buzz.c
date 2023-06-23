@@ -22,7 +22,6 @@ void fizz_buzz(void)
 {
 	int n = 1;
 
-	printf("0 ");
 
 	while (n < 100)
 	{
