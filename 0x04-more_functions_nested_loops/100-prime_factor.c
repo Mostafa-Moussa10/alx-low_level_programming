@@ -10,7 +10,7 @@
 int main(void)
 {
 	long i = 2;
-	long input = 612852475143;
+	long input = 1231952;
 
 	while (i < input)
 	{
@@ -23,10 +23,11 @@ int main(void)
 			i = next_prime_factor(i);
 		}
 	}
+	printf("the largest prime factor is ");
 	printf("%ld\n", i);
 
 
-	return (1);
+	return (0);
 }
 
 /**
