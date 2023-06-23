@@ -32,7 +32,7 @@ int main(void)
 /**
  * next_prime_factor - function to get prime number
  *
- * @current_prime_factor: input factor 
+ * @current_prime_factor: input factor
  *
  * Return: the next prime factor
  */
