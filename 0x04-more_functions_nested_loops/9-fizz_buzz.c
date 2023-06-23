@@ -20,7 +20,9 @@ int main(void)
 
 void fizz_buzz(void)
 {
-	int n = 0;
+	int n = 1;
+
+	printf("0 ");
 
 	while (n <= 100)
 	{
@@ -43,4 +45,5 @@ void fizz_buzz(void)
 		printf(" ");
 		n++;
 	}
+	printf("\n");
 }
