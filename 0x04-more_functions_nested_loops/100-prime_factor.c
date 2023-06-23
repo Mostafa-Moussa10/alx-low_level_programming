@@ -9,8 +9,8 @@
 
 int main(void)
 {
-	unsigned long i = 2;
-	unsigned long input = 124535448;
+	unsigned long long i = 2;
+	unsigned long long input = 124535448;
 
 	while (i < input)
 	{
@@ -36,10 +36,10 @@ int main(void)
  * Return: the next prime factor
  */
 
-unsigned long next_prime_factor(unsigned long current_prime_factor)
+unsigned long long next_prime_factor(unsigned long long current_prime_factor)
 {
-	unsigned long i = current_prime_factor + 1;
-	unsigned long j = 2;
+	unsigned long long i = current_prime_factor + 1;
+	unsigned long long j = 2;
 
 	while (j < i)
 	{
