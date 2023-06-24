@@ -9,8 +9,8 @@
 
 int main(void)
 {
-	unsigned long long i = 2;
-	unsigned long long input = 124535448;
+	double i = 2;
+	double input = 124535448;
 
 	while (i < input)
 	{
@@ -23,7 +23,7 @@ int main(void)
 			i = next_prime_factor(i);
 		}
 	}
-	printf("%lu\n", i);
+	printf("%f\n", i);
 
 	return (1);
 }
@@ -36,10 +36,10 @@ int main(void)
  * Return: the next prime factor
  */
 
-unsigned long long next_prime_factor(unsigned long long current_prime_factor)
+double next_prime_factor(double current_prime_factor)
 {
-	unsigned long long i = current_prime_factor + 1;
-	unsigned long long j = 2;
+	double i = current_prime_factor + 1;
+	double j = 2;
 
 	while (j < i)
 	{
@@ -56,4 +56,5 @@ unsigned long long next_prime_factor(unsigned long long current_prime_factor)
 	}
 	return (i);
 }
+
 

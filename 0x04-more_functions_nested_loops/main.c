@@ -3,6 +3,7 @@
 int main(void)
 {
 
+	double x = 612852475143;
 	more_numbers();
 
 	return (0);
