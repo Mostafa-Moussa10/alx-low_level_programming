@@ -44,5 +44,5 @@ void fizz_buzz(void)
 		printf(" ");
 		n++;
 	}
-	printf("Buzz \n");
+	printf("Buzz\n");
 }
