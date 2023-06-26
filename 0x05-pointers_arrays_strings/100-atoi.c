@@ -46,7 +46,7 @@ int _atoi(char *s)
 
 	sum = sum + s[len - 1] - '0';
 	
-	if (s[0] == 0)
+	if (s[0] == '0')
 	{
 	sum = -sum;
 	}
