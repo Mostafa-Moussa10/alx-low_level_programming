@@ -13,20 +13,18 @@ void puts_half(char *str)
 	int len = strlen(str);
 	int rem = len % 2;
 
-
-
-	len = len / 2;
+	i = len / 2;
 
 	while (i < len)
 	{
 		if (rem)
 		{
-			printf("%c", str[len + 1 + i]);
+			printf("%c", str[i + 1]);
 		}
 		else
 		{
 
-		}	printf("%c", str[len + i]);
+		}	printf("%c", str[i]);
 		i++;
 	}
 	printf("\n");
