@@ -14,6 +14,11 @@ int _atoi(char *s)
 	int i = 0; /*counter*/
 	int len = strlen(s);
 	int sum = 0;
+
+	if (s[0] == '-')
+	{
+		i++;
+	}
 	
 	while (i < len)
 	{
@@ -25,13 +30,7 @@ int _atoi(char *s)
 
 	}
 
-	i = 0;
-
-	if (s[0] == '-')
-	{
-		i++;
-	}
-
+	
 	while (i < len - 1)
 	{
 		sum = sum + (s[i] * 10 * (len - i + 1) - '0');
