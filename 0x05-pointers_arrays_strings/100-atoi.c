@@ -27,14 +27,14 @@ int _atoi(char *s)
 
 	i = 0;
 
-	if (s[0] == "-")
+	if (s[0] == '-')
 	{
 		i++;
 	}
 
 	while (i < len - 1)
 	{
-		sum = sum + (s[i] * 10 * (len - i + 1) - '0';
+		sum = sum + (s[i] * 10 * (len - i + 1) - '0');
 		i++;
 	}
 
