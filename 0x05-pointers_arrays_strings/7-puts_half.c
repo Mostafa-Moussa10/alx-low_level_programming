@@ -11,19 +11,22 @@ void puts_half(char *str)
 {
 	int i = 0; /*counter*/
 	int len = strlen(str);
+	int rem = len % 2;
 
-	if (len % 2 == 0)
-	{
-		len = len / 2;;
-	}
-	else
-	{
-		len = (len - 1) / 2;
-	}
+i
+
+	len = len / 2;
 
 	while (i < len)
 	{
-		printf("%c", str[len + i]);
+		if (rem)
+		{
+			printf("%c", str[len + 1 + i]);
+		}
+		else
+		{
+
+		}	printf("%c", str[len + i]);
 		i++;
 	}
 	printf("\n");
