@@ -19,7 +19,7 @@ void puts_half(char *str)
 	{
 		if (rem)
 		{
-			printf("%c", str[i + 1]);
+			printf("%c", str[(i + 1)]);
 		}
 		else
 		{
