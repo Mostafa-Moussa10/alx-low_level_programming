@@ -14,11 +14,14 @@ void puts2(char *str)
 
 	while (i < len)
 	{
-		if (i % 2 == 0){
+		if (i % 2 == 0)
+		{
 			printf("%c", str[i]);
 		}
 	i++;
 
 	}
+
+	printf("\n");
 }
 
