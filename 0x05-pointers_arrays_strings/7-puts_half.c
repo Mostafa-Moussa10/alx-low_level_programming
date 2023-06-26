@@ -17,14 +17,15 @@ void puts_half(char *str)
 
 	while (i < len)
 	{
-		if (rem != 0)
+		/*if (rem != 0)
 		{
 			printf("%c", str[i]);
 		}
 		else
 		{
 
-		}	printf("%c", str[i]);
+		}*/
+		printf("%c", str[i]);
 		i++;
 	}
 	printf("\n");
