@@ -30,6 +30,13 @@ int _atoi(char *s)
 
 	}
 
+	i = 0;
+
+	if (s[0] == '-')
+	{
+		i++;
+	}
+
 	
 	while (i < len - 1)
 	{
