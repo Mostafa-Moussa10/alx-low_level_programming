@@ -17,7 +17,7 @@ void puts_half(char *str)
 
 	while (i < len)
 	{
-		if (rem)
+		if (rem != 0)
 		{
 			printf("%c", str[i]);
 		}
