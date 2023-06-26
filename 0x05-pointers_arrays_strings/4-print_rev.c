@@ -15,7 +15,7 @@ void print_rev(char *s)
 
 	while (i < len)
 	{
-		str[i] = s[len - i - 1]
+		str[i] = s[len - i - 1];
 		i++;
 	}	
 	printf("%s\n", str);
