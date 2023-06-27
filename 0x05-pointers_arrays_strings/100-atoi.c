@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _atiu - function to convert string to an integer
+ * _atoi - function to convert string to an integer
  *
  * @s: pointer to string
  *
