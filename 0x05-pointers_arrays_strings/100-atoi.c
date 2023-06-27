@@ -31,8 +31,16 @@ int _atoi(char *s)
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			sum = sum * 10 + s[i] - '0';
-			
+			while (i < len)
+			{
+				if (s[i] >= '0' && s[i] <= '9')
+				{
+					sum = sum * 10 + s[i] - '0';
+				}
+				i++;
+				break;
+			}
+
 		}
 		
 	
