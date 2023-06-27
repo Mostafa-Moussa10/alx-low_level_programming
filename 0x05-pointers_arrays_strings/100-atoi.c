@@ -28,7 +28,14 @@ int _atoi(char *s)
 			{
 				if (s[i] >= '0' && s[i] <= '9')
 				{
-					sum = sum * 10 + (s[i] - '0');
+					if (sign < 0)
+					{
+						sum = sum * 10 - (s[i] - '0');
+					}
+					else
+					{
+						sum = sum * 10 + (s[i] - '0');
+					}
 				}
 				else
 				{
@@ -41,7 +48,6 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	sum = sign * sum;
 	return (sum);
 }
 
