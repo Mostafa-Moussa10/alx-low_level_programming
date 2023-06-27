@@ -12,45 +12,38 @@
 int _atoi(char *s)
 {
 	int i = 0; /*counter*/
+	int j = 1; /*number counter*/
 	int len = strlen(s);
 	int sum = 0;
+	int sign = 1; /*sign*/
 
-	if (s[0] == '-')
-	{
-		i++;
-	}
-	
+	/*get th e number and the sign*/
+
 	while (i < len)
 	{
-		if (s[i] > '9' || s[i] < '0')
+	
+		/*get the sign*/
+		if (s[i] == '-')
 		{
-			return (0);
+		       sign = -sign;
 		}
-		i++;
 
-	}
+		/*absolute value of the number*/
 
-	i = 0;
-
-	if (s[0] == '-')
-	{
-		i++;
-	}
-
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			sum = sum * 10 + s[i];
+			
+		}
+		
 	
-	while (i < len - 1)
-	{
-		sum = sum + (s[i] * 10 * (len - i + 1) - '0');
 		i++;
 	}
 
-	sum = sum + s[len - 1] - '0';
-	
-	if (s[0] == '0')
-	{
-	sum = -sum;
-	}
 
+	/*real value of integer*/
+
+	sum = sign * sum;
 	return (sum);
 }
 
