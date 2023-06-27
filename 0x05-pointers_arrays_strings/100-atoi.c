@@ -15,6 +15,7 @@ int _atoi(char *s)
 	int len = strlen(s);
 	int sum = 0;
 	int sign = 1; /*sign*/
+
 	while (i < len)
 	{
 		if (s[i] == '-')
