@@ -37,11 +37,12 @@ int _atoi(char *s)
 				{
 					sum = sum * 10 + s[i] - '0';
 				}
-				i++;
 				else
 				{
 					break;
 				}
+	
+				i++;
 			}
 		
 			break;
