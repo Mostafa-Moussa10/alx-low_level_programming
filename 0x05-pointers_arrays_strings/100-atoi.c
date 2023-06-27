@@ -12,7 +12,6 @@
 int _atoi(char *s)
 {
 	int i = 0; /*counter*/
-	int j = 1; /*number counter*/
 	int len = strlen(s);
 	int sum = 0;
 	int sign = 1; /*sign*/
