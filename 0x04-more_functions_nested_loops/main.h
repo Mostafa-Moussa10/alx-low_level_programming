@@ -18,5 +18,6 @@ void print_triangle(int size);
 int _putchar(char c);
 void fizz_buzz(void);
 double next_prime_factor(double current_prime_factor);
+void print_number(int n);
 
 #endif
