@@ -12,33 +12,22 @@ char *leet(char *s)
 {
 	/*counter*/
 	int i = 0;
+	int j = 0;
+	/*strings to compare*/
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4455007711";
+
 
 	while (s[i] != '\0')
 	{
-		if (s[i] == 'a' || s[i] == 'A')
+		for (j = 0; j < 10; j++)
 		{
-			s[i] = '4';
+			if (s[i] == s1[j])
+			{
+				s[i] = s2[j];
+			}
 		}
-		else if (s[i] == 'e' || s[i] == 'E')
-                {
-                        s[i] = '3';
-                }
-		else if (s[i] == 'o' || s[i] == 'O')
-                {
-                        s[i] = '0';
-                }
-		else if (s[i] == 't' || s[i] == 'T')
-                {
-                        s[i] = '7';
-                }
-		else if (s[i] == 'l' || s[i] == 'L')
-                {
-                        s[i] = '1';
-                }
-
-		i++;
 	}
-
 	return (s);
 }
 
