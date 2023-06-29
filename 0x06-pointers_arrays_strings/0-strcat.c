@@ -31,7 +31,7 @@ char *_strcat(char *dest, char *src)
 
 	/*add \0*/
 	dest[i] = src[j];
-	
+
 	return (dest);
 }
 
