@@ -14,33 +14,26 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		if (s[i] >= 'a' && s[i] <= 'z')
+		if !((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
 		{
-		}
-		else if (s[i] >= 'A' && s[i] <= 'Z')
-		{
-		}
-		else if (s[i] == '\\' && s[i +1] == 'n')
-		{
-			s[i + 2] = s[i + 2] + 'A' - 'a';
-			i++;
-		}
-		else
-		{
-			while (s[]
-			s[i + 1] = s[i + 1] + 'A' - 'a';
+			while (s[i] != '\0')
+			{
+				i++;
+				if (s[i] >= 'A' && s[i] <= 'Z')
+				{
+					break;
+				}
+				else if (s[i] >= 'a' && s[i] <= 'z')
+				{
+					s[i] = s[i] - 'a' + 'A';
+					break;
+				}
+			}
 		}
 		i++;
 	}
+
 	return (s);
 }
-
-/**
- * letter - function to check if the element is letter or not
- *
- * @s: pointer to string
- *
- * Return: 1 if letter , 0 if not
- */
 
 
