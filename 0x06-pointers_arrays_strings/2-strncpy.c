@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 
 /**
  * _strncpy = fuction to overwrite n of letters in string
