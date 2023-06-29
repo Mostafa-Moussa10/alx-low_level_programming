@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy = fuction to overwrite n of letters in string
+ * _strncpy - fuction to overwrite n of letters in string
  *
  * @dest: first string
  * @src: second string
@@ -28,6 +28,5 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[j] = src[i];
 	}
-	
 	return (dest);
 }
