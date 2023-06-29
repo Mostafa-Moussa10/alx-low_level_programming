@@ -2,7 +2,7 @@
 
 
 /**
- * _strncat - function to concatenates two strings but with specific number of letters
+ * _strncat - function to concatenates two strings
  *
  * @dest: first string
  * @src: second string
@@ -25,11 +25,10 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (j < n)
 	{
+
 		dest[i] = src[j];
-	
 		j++;
 		i++;
 	}
-	
 	return (dest);
 }
