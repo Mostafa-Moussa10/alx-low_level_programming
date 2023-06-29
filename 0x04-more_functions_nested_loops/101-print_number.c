@@ -26,9 +26,9 @@ void print_number(int n)
 
 	while (j > 0)
 	{
-		i = n / (j * 10);
+		i = n / (10 * j);
 		_putchar(i + '0');
-		n = n % (j * 10);
+		n = n % (10 * j);
 		j--;
 	}
 	_putchar('0' + n);
