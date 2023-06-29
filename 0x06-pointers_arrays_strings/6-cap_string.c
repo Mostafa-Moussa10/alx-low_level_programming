@@ -14,7 +14,7 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		if !((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+		if (!((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z')))
 		{
 			while (s[i] != '\0')
 			{
@@ -25,6 +25,10 @@ char *cap_string(char *s)
 				}
 				else if (s[i] >= 'a' && s[i] <= 'z')
 				{
+					if (s[i - 1] >= '0' && s[i - 1] <= '9')
+					{
+						break;
+					}
 					s[i] = s[i] - 'a' + 'A';
 					break;
 				}
