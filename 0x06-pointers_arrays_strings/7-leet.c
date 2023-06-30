@@ -15,7 +15,7 @@ char *leet(char *s)
 	int j = 0;
 	/*strings to compare*/
 	char s1[] = "aAeEoOtTlL";
-	char s2[] = "4455007711";
+	char s2[] = "4433007711";
 
 
 	while (s[i] != '\0')
