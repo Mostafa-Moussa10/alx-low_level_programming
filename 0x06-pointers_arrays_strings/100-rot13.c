@@ -10,8 +10,8 @@
 
 char *rot13(char *s)
 {
-	char s1[] = {a, b, c, d, e, f, g, h, i, j, k, l, m};
-	char s2[] = {n, o, p, q, r, s, t, u, v, w, x, y, z};
+	char s1[] = "abcdefghijklm";
+	char s2[] = "nopqrstuvwxyz";
 
 	int i = 0;
 	int j = 0;
