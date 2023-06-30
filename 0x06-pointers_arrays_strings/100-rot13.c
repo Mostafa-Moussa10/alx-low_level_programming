@@ -10,8 +10,8 @@
 
 char *rot13(char *s)
 {
-	char s1[] = "abcdefghijklm";
-	char s2[] = "nopqrstuvwxyz";
+	char s1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char s2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	int i = 0;
 	int j = 0;
@@ -23,11 +23,6 @@ char *rot13(char *s)
 			if (s[i] == s1[j])
 			{
 				s[i] = s2[j];
-				break;
-			}
-			else if (s[i] == s2[j])
-			{
-				s[i] = s1[j];
 				break;
 			}
 
