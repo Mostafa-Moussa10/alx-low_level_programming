@@ -25,6 +25,12 @@ char *rot13(char *s)
 				s[i] = s2[j];
 				break;
 			}
+			else if (s[i] == s2[j])
+			{
+				s[i] = s1[j];
+				break;
+			}
+
 		}
 		i++;
 	}
