@@ -7,7 +7,7 @@
  * @s: pointer to the string
  * @c: the character which is looked for
  *
- * Return: pointer to the character location or NULL 
+ * Return: pointer to the character location or NULL
  */
 
 char *_strchr(char *s, char c)
