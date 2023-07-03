@@ -30,19 +30,16 @@ char *_strstr(char *haystack, char *needle)
 			if (needle[j] == haystack[j])
 			{
 				k = i;
-				while (needle[j] == haystack[k])
+				while (needle[j] == haystack[k] || needle[j] == '\0')
 				{
 					k++;
 					j++;
 				}
 				if (needle[j] == '\0')
 				{
-					return (haystack + i)
+					return (haystack + i);
 				}
 			}
-
-		}
-				
 
 		}
 		i++;
