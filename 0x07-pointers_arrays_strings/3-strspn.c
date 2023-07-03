@@ -20,11 +20,11 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int len2 = strlen(accept);
 
 
-	while (i < len2)
+	while (i < len1)
 	{
-		for (j = 0; j < len1; j++)
+		for (j = 0; j < len2; j++)
 		{
-			if (accept[i] == s[j])
+			if (s[i] == accept[j])
 			{
 				num++;
 				break;
