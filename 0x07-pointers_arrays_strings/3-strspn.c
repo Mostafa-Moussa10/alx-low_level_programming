@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int len2 = strlen(accept);
 
 
-	while (i < len1)
+	while (s[i] != ' ')
 	{
 		for (j = 0; j < len2; j++)
 		{
