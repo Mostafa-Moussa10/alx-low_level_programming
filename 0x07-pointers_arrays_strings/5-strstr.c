@@ -15,6 +15,7 @@ char *_strstr(char *haystack, char *needle)
 	/*counters*/
 	unsigned int i = 0;
 	unsigned int j = 0;
+	unsigned int k = 0;
 
 	/*
 	 * string length
@@ -26,6 +27,22 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (j = 0; j < len2; j++)
 		{
+			if (needle[j] == haystack[j])
+			{
+				k = i;
+				while (needle[j] == haystack[k])
+				{
+					k++;
+					j++;
+				}
+				if (needle[j] == '\0')
+				{
+					return (haystack + i)
+				}
+			}
+
+		}
+				
 
 		}
 		i++;
