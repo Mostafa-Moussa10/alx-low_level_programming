@@ -7,7 +7,7 @@
  * @s: pointer to the string
  * @c: the character which is looked for
  *
- * Return: pointer to the character location or NULL if the character is not found
+ * Return: pointer to the character location or NULL 
  */
 
 char *_strchr(char *s, char c)
@@ -20,7 +20,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			return(s + i);
+			return (s + i);
 		}
 		i++;
 	}
