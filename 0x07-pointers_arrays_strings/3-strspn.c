@@ -7,7 +7,7 @@
  * @s: pointer to the main string
  * @accept: pointer to the values to check
  *
- * Retyrn: number of bytes
+ * Return: number of bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
