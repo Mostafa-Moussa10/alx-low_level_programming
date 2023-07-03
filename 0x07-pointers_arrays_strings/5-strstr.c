@@ -21,26 +21,21 @@ char *_strstr(char *haystack, char *needle)
 	 * string length
 	 */
 	unsigned int len1 = strlen(haystack);
-	unsigned int len2 = strlen(needle);
 
 	while (i < len1)
 	{
-		for (j = 0; j < len2; j++)
+		if (needle[0] == haystack[i])
 		{
-			if (needle[j] == haystack[i])
+			k = i;
+			while (needle[j] == haystack[k] && needle[j] != '\0')
 			{
-				k = i;
-				while (needle[j] == haystack[k] && needle[j] != '\0')
-				{
-					k++;
-					j++;
-				}
-				if (needle[j] == '\0')
-				{
-					return (haystack + i);
-				}
+				k++;
+				j++;
 			}
-
+			if (needle[j] == '\0')
+			{
+				return (haystack + i);
+			}
 		}
 		i++;
 	}
