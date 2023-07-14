@@ -1,0 +1,25 @@
+#include "main.h"
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ * _strdup - function to duplicate a given string
+ *
+ * @str: the original string
+ *
+ * Return: the copied string
+ */
+
+char *_strdup(char *str)
+{
+	unsigned int i = 0;
+	char *p = (char *) malloc(sizeof(char) * strlen(str));
+
+	if (str == NULL || p == NULL)
+		return (NULL);
+
+	for (i = 0; i < strlen(str); i++)
+		p[i] = str[i];
+
+	return (p);
+}
