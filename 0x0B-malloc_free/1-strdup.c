@@ -15,10 +15,11 @@ char *_strdup(char *str)
 
 	unsigned int i = 0;
 	char *p;
-	p = (char *) malloc(sizeof(char) * (strlen(str) + 1));
 
 	if (str == NULL)
 		return (NULL);
+
+	p = (char *) malloc(sizeof(char) * (strlen(str) + 1));
 
 	if (p == NULL)
 		return (NULL);
@@ -28,4 +29,5 @@ char *_strdup(char *str)
 
 	return (p);
 }
+
 
