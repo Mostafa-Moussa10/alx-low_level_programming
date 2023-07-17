@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
-#include <string.h>
+#include <stdlib.h>
 
 /**
  * init_dog - function to initialize the dog info
