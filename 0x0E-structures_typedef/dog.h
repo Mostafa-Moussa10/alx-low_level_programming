@@ -14,10 +14,8 @@ struct dog
 };
 
 /**
- * dog_t - typedeg og struct dog
+ * dog_t - typedef for struct dog
  */
-
-
 typedef struct dog dog_t;
 
 /*function declaeration*/
