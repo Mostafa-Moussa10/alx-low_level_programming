@@ -9,12 +9,13 @@
 void print_name(char *name, void (*f)(char *))
 {
 	int i = 0;
+	char *p;
 
-	f = print_name_as_is(name);
+	p = f(name);
 
-	while (f != '\0')
+	while (p[i] != '\0')
 	{
-		_putchar(f[i]);
+		_putchar(p[i]);
 		i++;
 	}
 }
