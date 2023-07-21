@@ -15,12 +15,11 @@ int check_digit(char *s)
 {
 	unsigned int i = 0;
 
-	for (i = 0; s[i] != '\n'; i++)
+	for (i = 0; i < strlen(s); i++)
 	{
 		if (!isdigit(s[i]))
 		{
 			return (0);
-			
 		}
 	}
 	return (1);
@@ -43,7 +42,6 @@ int main(int argc, char **argv)
 	{
 		if (check_digit(argv[i]))
 		{
-		
 			sum += atoi(argv[i]);
 		}
 		else
@@ -53,6 +51,5 @@ int main(int argc, char **argv)
 		}
 	}
 	printf("%d\n", sum);
-
 	return (0);
 }
