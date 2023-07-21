@@ -39,25 +39,18 @@ int main(int argc, char **argv)
 	int i = 0;
 	int sum = 0;
 
-	/*check for digit*/
-
 	for (i = 1; i < argc; i++)
 	{
 		if (check_digit(argv[i]))
 		{
-			printf("Error\n");
-			exit(1);
+		
+			sum += atoi(argv[i]);
 		}
-	}
-
-	for (i = 1; i < argc; i++)
-	{
-		if (atoi(argv[i]) < 0)
+		else
 		{
 			printf("Error\n");
-			exit(1);
+			return (1);
 		}
-		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 
