@@ -17,6 +17,7 @@ int coin_counter(int money)
 	{
 		count++;
 		money -= 25;
+
 	}
 	while (money >= 10)
 	{
@@ -66,6 +67,8 @@ int main(int argc, char **argv)
 
 	count = coin_counter(money);
 
-	printf("%d\n", count);
+	if (count != 0)
+		printf("%d\n", count);
+
 	return (0);
 }
