@@ -62,7 +62,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	if (money < 0)
+	if (money <= 0)
 		printf("0\n");
 
 	count = coin_counter(money);
