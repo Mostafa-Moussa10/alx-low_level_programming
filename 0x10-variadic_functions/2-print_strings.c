@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 /**
- * print_numbers - function to print input numbers
+ * print_strings - function to print input numbers
  *
  * @separator: the string to be printed between numbers
  * @n: number of inputs
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i = 0;
 	va_list args;
@@ -22,7 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (s != NULL)
 			printf("%s", s);
 		else
-			printf("(null)");
+			printf("(nil)");
 
 		if (separator != NULL && i != n - 1)
 			printf("%s", separator);
