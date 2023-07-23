@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
  * print_numbers - function to print input numbers
@@ -8,9 +9,9 @@
  * @n: number of inputs
  */
 
-void print_numbers(const char *separator, const int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i = 0;
+	unsigned int i = 0;
 	va_list args;
 
 	for (i = 0; i < n-1; i++)
