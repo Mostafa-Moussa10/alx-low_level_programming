@@ -5,15 +5,15 @@
  * @head: poitner to header of linked list
  */
 
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *s;
 
-	while (head)
+	while (*head)
 	{
-		s = head->next;
-		free(head);
-		head = s;
+		s = (*head)->next;
+		free(*head);
+		(*head) = s;
 	}
-
+	head = NULL;
 }
