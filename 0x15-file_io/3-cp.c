@@ -23,30 +23,23 @@ int main(int argc, char **argv)
 	}
 
 	fd1 = open(argv[1], O_RDONLY);
-	if (fd1 == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
-		exit(98);
-	}
-
-	fd2 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
-	if (fd2 == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
-		exit(99);
-	}
-
 	buf = malloc(sizeof(char) * 1024);
-
+	r = read(fd1, buf, 1024);
+	fd2 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	
 	while (r > 0)
 	{
-		r = read(fd1, buf, 1024);
-		if (r == -1)
+		if (r == -1 || fd1 == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read form file %s\n", argv[1]);
+			exit (98);
+		}
 		w = write(fd2, buf, r);
 		fd2 = open(argv[2], O_WRONLY | O_APPEND);
-		if (fd2 == -1 || w == -1)
+		if (fd2 == -1 || w == -1 || !buf)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			free(buf);
 			exit(99);
 		}
 	}
@@ -63,6 +56,6 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't close fd%d\n", fd1);
 		exit(100);
 	}
-	free(buf);
+	free(buf)
 	return (1);
 }
