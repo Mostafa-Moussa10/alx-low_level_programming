@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 		if (r == -1 || fd1 == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read form file %s\n", argv[1]);
-			free(buf);i
+			free(buf);
 			exit (98);
 		}
 		w = write(fd2, buf, r);
