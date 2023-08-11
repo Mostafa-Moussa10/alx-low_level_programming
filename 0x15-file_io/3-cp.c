@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
 	{
-		dprintf(STDERR_FILNO, "Error: Can't read from %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
 		exit(98);
 	}
 	buf = malloc(sizeof(char) * 1024);
@@ -36,16 +36,16 @@ int main(int argc, char **argv)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
                 exit(99);
-        }
+	}
 
 	write(fd, buf, 1024);
 	free(buf);
 	fc = close(fd);
-        if (fc ==  -1)
+	if (fc ==  -1)
         {
                 dprintf(STDERR_FILENO, "Error: Can't close fd%d\n", fd);
                 exit(100);
-        }
+	}
 	printf("IT IS SUCCESS\n");
 	return (1);
 }
