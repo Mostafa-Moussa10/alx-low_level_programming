@@ -35,11 +35,13 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
 		exit(99);
 	}
+
 	buf = malloc(sizeof(char) * 1024);
 
 	while (r > 0)
 	{
 		r = read(fd1, buf, 1024);
+		if (r == -1)
 		w = write(fd2, buf, r);
 		fd2 = open(argv[2], O_WRONLY | O_APPEND);
 		if (fd2 == -1 || w == -1)
@@ -61,5 +63,6 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't close fd%d\n", fd1);
 		exit(100);
 	}
+	free(buf);
 	return (1);
 }
