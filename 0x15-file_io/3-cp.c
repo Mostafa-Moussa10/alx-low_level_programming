@@ -29,17 +29,17 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	buf = malloc(sizeof(char) * 1024);
-	r = read(fd1, buf, 1024);
 	fd2 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (fd2 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
 		exit(99);
 	}
+	buf = malloc(sizeof(char) * 1024);
 
 	while (r > 0)
 	{
+		r = read(fd1, buf, 1024);
 		w = write(fd2, buf, r);
 		fd2 = open(argv[2], O_WRONLY | O_APPEND);
 		if (fd2 == -1 || w == -1)
@@ -47,8 +47,6 @@ int main(int argc, char **argv)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
-		r = read(fd1, buf, 1024);
-
 	}
 
 	fc = close(fd1);
