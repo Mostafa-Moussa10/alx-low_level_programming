@@ -32,16 +32,19 @@ int main(int argc, char **argv)
 		if (r == -1 || fd1 == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read form file %s\n", argv[1]);
+			free(buf);i
 			exit (98);
 		}
 		w = write(fd2, buf, r);
-		fd2 = open(argv[2], O_WRONLY | O_APPEND);
 		if (fd2 == -1 || w == -1 || !buf)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buf);
 			exit(99);
 		}
+		r = read(fd1, buf, 1024);
+		fd2 = open(argv[2], O_WRONLY | O_APPEND);
+
 	}
 
 	fc = close(fd1);
