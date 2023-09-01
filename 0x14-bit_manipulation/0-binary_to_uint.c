@@ -30,8 +30,6 @@ unsigned int binary_to_uint(const char *b)
 		bn = bn / 10;
 		i++;
 	}
-
 	return (num);
-	
 }
 
